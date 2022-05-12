@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IIMT University</title>
+</head>
+<body>
+<div class="container">
+
+  <img src="11%20-%20Copy.jpg" width="100%" height="50%" />
+
+  <nav>
+    <ul class="list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Apply</a></li>
+    </ul>
+  </nav>
+
+ <div class="container">
+
+  <img src="11.jpg" width="100%" height="50%" />
+</div>
+<style>
+    html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 20px;
+  padding: 10px 0;
+  margin: 0;
+ background-color: aquamarine;
+}
+
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav {
+  z-index: 500;
+  width: 100%;
+  background-color: black;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fixed .nav-inner-most {
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  float: left;
+}
+.right {
+  list-style: none;
+  float: right;
+}
+nav ul li a:link,
+nav ul li a:visited {
+  display: block;
+  text-decoration: none;
+  padding: 10px 40px;
+  background-color: black;
+  color: orange;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: orange;
+  color: black;
+}
+
+nav ul li:last-child a:link,
+nav ul li:last-child a:visited {
+  border-right: none;
+}
+
+.list:before,
+.list:after {
+  content: "";
+  display: table;
+}
+.list:after {
+  clear: both;
+}
+
+    </style>
+   
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script></div>
+</body>
+</html>

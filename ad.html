@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIMT University</title>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <img src="11 - Copy.jpg" alt="#">
+        </div>
+    </header>
+    <nav class="main_nav">
+        <div class="main_nav_wrap me_sticky">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+ 
+        <div class="page_wrap">
+          <img src="11.jpg" alt="#">
+    </div>
+    <script>
+        // can play with the offset value to get the smooth results you are looking for.
+
+var stickyEl = document.querySelector(".me_sticky");
+var stickyPosition = stickyEl.getBoundingClientRect().top;
+var offset = -20;
+window.addEventListener("scroll", function () {
+	if (window.pageYOffset >= stickyPosition + offset) {
+		stickyEl.style.position = "fixed";
+		stickyEl.style.top = "0px";
+	} else {
+		stickyEl.style.position = "static";
+		stickyEl.style.top = "";
+	}
+});
+
+    </script>
+</body>
+</html>
+
+
+<style>
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,400,700");
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: lato, sans-serif;
+  color: #414141;
+  font-size: 1rem;
+  min-height: 5000px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: lato, sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header .hero {
+  background-color: #38adb5;
+  
+
+}
+header .hero img {
+ background-size: cover;
+ width: 100%;
+}
+
+
+nav.main_nav .main_nav_wrap {
+  width: 100%;
+  display: block;
+  background-color: #414141;
+}
+nav.main_nav .main_nav_wrap ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+nav.main_nav .main_nav_wrap ul li a {
+  font-size: 1.2rem;
+  padding: 20px;
+  display: block;
+  color: #fff;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+nav.main_nav .main_nav_wrap ul li a:hover {
+  text-decoration: none;
+  background-color: #5b5b5b;
+}
+
+.page_wrap img {
+  width: 100%;
+  background-size: cover;
+}
+</style>
